@@ -7,6 +7,7 @@ import swal from 'sweetalert';
 import './App.css';
 import Modal from './Components/Modal/Modal';
 import WebFont from 'webfontloader';
+import FAQ from './Components/FAQ/FAQ';
 const App = () => {
   const [blogData, setBlogData] = useState([]);
   const [bookmark, setBookmark] = useState([]);
@@ -69,6 +70,11 @@ const App = () => {
           removeHandler={removeHandler}
           times={times}
         ></Modal>
+
+        {/* FAQ  */}
+        <section>
+          <FAQ/>
+        </section>
       </main>
     </>
   );
