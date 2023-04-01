@@ -11,11 +11,11 @@ const Accordion = (props) => {
       </div>
       <div className='collapse-content'>
         <div className=''>
-          <h2>{heading}</h2>
+          <h2 className='font-bold text-2xl'>{heading}</h2>
           <p>{ans1}</p>
         </div>
         <div className=''>
-          <h2>{heading2}</h2>
+          <h2 className='font-bold text-2xl'>{heading2}</h2>
           <p>{ans2}</p>
         </div>
       </div>
