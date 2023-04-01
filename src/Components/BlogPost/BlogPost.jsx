@@ -3,7 +3,7 @@ import bookmarkIcon from '../../assets/bookmark-regular.svg';
 import './BlogPost.css';
 
 const BlogPost = (props) => {
-  const { id, authorImage, name, postCover, readTime, blogTitle } =
+  const { id, authorImage, name, postCover, readTime, blogTitle, postTime } =
     props.blogData;
   const countBlog = props.countBlog;
   const timeCount = props.timeCount;
@@ -12,7 +12,7 @@ const BlogPost = (props) => {
     <>
       {/* blog post part */}
 
-      <div className='blog-Post mb-20'>
+      <div className='blog-Post mb-10 p-4 bg-slate-300 rounded'>
         <div className='w-full mb-6 bg-center bg-cover'>
           <img
             src={postCover}
@@ -25,9 +25,9 @@ const BlogPost = (props) => {
             <div className=''>
               <img src={authorImage} alt='' />
             </div>
-            <div className='justify-items-start ml-2'>
-              <h2 className='font-bold'>{name}</h2>
-              <p></p>
+            <div className='justify-items-start ml-2 text-left'>
+              <h2 className='font-bold text-xl'>{name}</h2>
+              <p>{postTime}</p>
             </div>
           </div>
           <div className='flex items-center text-right justify-end w-1/2'>

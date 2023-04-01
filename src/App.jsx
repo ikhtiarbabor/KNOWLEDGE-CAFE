@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Components/Header/Header';
-import avatar from './assets/Author 04.png';
 import BlogPost from './Components/BlogPost/BlogPost';
 import Bookmark from './Components/Bookmark/Bookmark';
 import swal from 'sweetalert';
@@ -44,7 +43,7 @@ const App = () => {
   };
   return (
     <>
-      <Header avatar={avatar} />
+      <Header />
       <main className='mx-auto max-w-7xl'>
         <div className='grid blog-post'>
           <section>
@@ -72,8 +71,9 @@ const App = () => {
         ></Modal>
 
         {/* FAQ  */}
-        <section>
-          <FAQ/>
+        <section className='max-w-4xl mx-auto'>
+          <h1>FAQ</h1>
+          <FAQ></FAQ>
         </section>
       </main>
     </>

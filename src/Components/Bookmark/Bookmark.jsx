@@ -5,7 +5,7 @@ const Bookmark = (props) => {
   let times = props.times;
   return (
     <>
-      <div className='text-left sticky top-0'>
+      <div className='text-left sticky top-5 bottom-10'>
         <div>
           <h2 className='bg-slate-400 p-3 rounded mb-2'>
             Spend time on read :{times} min
