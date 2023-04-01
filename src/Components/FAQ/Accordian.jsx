@@ -7,7 +7,7 @@ const Accordion = (props) => {
     <div className='collapse'>
       <input type='checkbox' />
       <div className='collapse-title text-xl font-medium'>
-        <h1>{question}</h1>
+        <h1 className='bg-slate-400 rounded p-4'>{question}</h1>
       </div>
       <div className='collapse-content'>
         <div className=''>
