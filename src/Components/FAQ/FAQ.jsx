@@ -15,11 +15,11 @@ const FAQ = () => {
   };
   const questionThree = {
     question: 'How Does React work?',
-    ans1: 'Wait',
+    ans1: 'React is a JS library.It divides the UI into reusable pieces of code called Components. React has a virtual Dom. When any update it update the virtual. Then it compare with real DOM what is updated using Diff Algorithm.Then it update the specific codes of Real Dom ',
   };
   const questionFour = {
     question: 'What can UseEffect do other than load data?',
-    ans1: 'Wait',
+    ans1: 'useEffect() can load data. It can manipulating  DOM directly',
   };
   return (
     <>

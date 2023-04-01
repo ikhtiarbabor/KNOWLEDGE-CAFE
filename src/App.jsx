@@ -72,7 +72,7 @@ const App = () => {
 
         {/* FAQ  */}
         <section className='max-w-4xl mx-auto'>
-          <h1>FAQ</h1>
+          <h1 className='text-3xl font-bold'>FAQ</h1>
           <FAQ></FAQ>
         </section>
       </main>
