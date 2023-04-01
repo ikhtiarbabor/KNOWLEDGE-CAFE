@@ -6,10 +6,19 @@ import Bookmark from './Components/Bookmark/Bookmark';
 import swal from 'sweetalert';
 import './App.css';
 import Modal from './Components/Modal/Modal';
+import WebFont from 'webfontloader';
 const App = () => {
   const [blogData, setBlogData] = useState([]);
   const [bookmark, setBookmark] = useState([]);
   let [times, setTimes] = useState(0);
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Raleway', 'sans-serif'],
+      },
+    });
+  }, []);
+
   useEffect(() => {
     const url = 'data.json';
     fetch(url)
@@ -47,7 +56,7 @@ const App = () => {
               ></BlogPost>
             ))}
           </section>
-          <section className='relative sm:hidden md:block'>
+          <section className='relative sm:hidden md:block bookmark-area'>
             <Bookmark
               addBookmark={bookmark}
               removeHandler={removeHandler}

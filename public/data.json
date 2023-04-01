@@ -1,6 +1,7 @@
 [
   {
     "id": "64261ce42115f314167a3d08",
+    "index": "1",
     "authorImage": "../src/assets/Author 1.png",
     "name": "Lloyd Cooper",
     "postCover": "https://img.freepik.com/free-vector/digital-coding-background-with-numbers-zero-one_1017-30363.jpg?w=1060&t=st=1680218839~exp=1680219439~hmac=eac63313153bb90032966c581220a9a06b13a3a7aa1d93b6815663f256183676",
@@ -9,22 +10,25 @@
   },
   {
     "id": "64261ce471bbd8538eebbc90",
+    "index": "2",
     "authorImage": "../src/assets/author 02.png",
     "name": "Tiffany Chapman",
     "postCover": "https://img.freepik.com/free-photo/hooded-computer-hacker-stealing-information-with-laptop_155003-1918.jpg?w=996&t=st=1680252419~exp=1680253019~hmac=745f08ed6d2b743678405ab8246fca5fb8592f7d24296cd8c3fff78d9d965ad2",
     "readTime": "10",
-    "blogTitle": "High Your Confident"
+    "blogTitle": "How to Secure Your Data and Business Assets for 2023"
   },
   {
     "id": "64261ce46900e0f2487cee86",
+    "index": "3",
     "authorImage": "../src/assets/Author 03.png",
     "name": "Marie Hensley",
     "postCover": "https://img.freepik.com/free-photo/programming-background-collage_23-2149901770.jpg?w=900&t=st=1680218750~exp=1680219350~hmac=79876e8234b905ceb721abc99ae1a4820580b2a7a56eca1e475ab2ba4b606ba3",
     "readTime": "7",
-    "blogTitle": "Question Programmers"
+    "blogTitle": "How to Decide What Technology to Use For Your Start Up"
   },
   {
     "id": "64261ce46bd141d55fce387f",
+    "index": "4",
     "authorImage": "../src/assets/Author 04.png",
     "name": "Bethany Kirk",
     "postCover": "https://img.freepik.com/free-vector/software-engineering-background_1284-3394.jpg?w=740&t=st=1680218931~exp=1680219531~hmac=c6045f9a7c9ac2d02c84d45ce6d133499cfe1da12a6e6c1daca7e726e056424b",

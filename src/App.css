@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo {
@@ -45,4 +46,16 @@
     grid-template-columns: 3fr 1fr;
     gap: 2em;
   }
+}
+.font-loader {
+  font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 764px) {
+  .bookmark-area {
+    display: none;
+  }
+}
+.logo {
+  font-weight: 900;
+  padding: 0;
 }

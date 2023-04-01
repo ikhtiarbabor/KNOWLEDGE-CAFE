@@ -6,7 +6,12 @@ const Header = ({ avatar }) => {
     <header className='text-neutral'>
       <div className='flex justify-between max-w-7xl mx-auto md:my-8 sm:my-4 items-center'>
         <div className=''>
-          <a href='/index.html'>Cyber Cafe</a>
+          <a
+            href='/index.html'
+            className='md:text-5xl sm:text-3xl bold logo font-loader'
+          >
+            Cyber Cafe
+          </a>
         </div>
         <div className='flex sm:my-2'>
           <label

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Bookmark = (props) => {
-  console.log(props.addBookmark);
   const addBookmark = props.addBookmark;
   const removeHandler = props.removeHandler;
   let times = props.times;
@@ -17,7 +16,10 @@ const Bookmark = (props) => {
         <div>
           {addBookmark &&
             addBookmark.map((element) => (
-              <div className='flex items-center font-bold rounded bg-white p-3 my-2'>
+              <div
+                key={element.index}
+                className='flex items-center font-bold rounded bg-white p-3 my-2'
+              >
                 <div className='w-1/2 flex items-center'>
                   <img src={element.authorImage} alt='' className='mr-3' />
                   <h2 className='text-xs'>{element.blogTitle}</h2>

@@ -21,14 +21,16 @@ const BlogPost = (props) => {
           />
         </div>
         <div className='flex items-center'>
-          <div className=''>
-            <img src={authorImage} alt='' />
+          <div className='w-1/2 flex items-center'>
+            <div className=''>
+              <img src={authorImage} alt='' />
+            </div>
+            <div className='justify-items-start ml-2'>
+              <h2 className='font-bold'>{name}</h2>
+              <p></p>
+            </div>
           </div>
-          <div className='justify-items-start'>
-            <h2>{name}</h2>
-            <p></p>
-          </div>
-          <div className='flex items-center text-right justify-end '>
+          <div className='flex items-center text-right justify-end w-1/2'>
             <p>
               <span>{readTime}</span>min read
             </p>
@@ -41,17 +43,19 @@ const BlogPost = (props) => {
           </div>
         </div>
 
-        <h2 className='text-left sm:text-3xl md:text-4xl font-bold my-4'>
-          {blogTitle}
-        </h2>
-        <p className='text-left'>
-          <button
-            className='btn btn-success sm:text-2xl'
-            onClick={() => timeCount(readTime)}
-          >
-            Mark as read
-          </button>
-        </p>
+        <div>
+          <h2 className='text-left sm:text-3xl md:text-4xl font-bold my-4'>
+            {blogTitle}
+          </h2>
+          <p className='text-left'>
+            <button
+              className=' rounded btn btn-neutral-400 sm:text-xs md:text-xs text-white'
+              onClick={() => timeCount(readTime)}
+            >
+              Mark as read
+            </button>
+          </p>
+        </div>
       </div>
     </>
   );
