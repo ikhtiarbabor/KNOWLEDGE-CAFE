@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Header from './Components/Header/Header';
 import BlogPost from './Components/BlogPost/BlogPost';
 import Bookmark from './Components/Bookmark/Bookmark';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import swal from 'sweetalert';
 import './App.css';
 import Modal from './Components/Modal/Modal';
@@ -28,7 +30,9 @@ const App = () => {
   const countBlog = (post, id) => {
     const bookObj = bookmark.find((element) => element.id === id);
     if (bookObj) {
-      swal('Oops', 'You Already Add On Bookmark', 'error');
+      toast.error('Item is already bookmark !', {
+        position: toast.POSITION.TOP_RIGHT,
+      });
       return;
     }
     setBookmark([...bookmark, post]);

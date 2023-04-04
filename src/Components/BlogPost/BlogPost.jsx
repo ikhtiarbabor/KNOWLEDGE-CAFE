@@ -1,6 +1,8 @@
 import React from 'react';
 import bookmarkIcon from '../../assets/bookmark-regular.svg';
 import './BlogPost.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BlogPost = (props) => {
   const { id, authorImage, name, postCover, readTime, blogTitle, postTime } =
@@ -53,6 +55,7 @@ const BlogPost = (props) => {
               onClick={() => timeCount(readTime)}
             >
               Mark as read
+              <ToastContainer />
             </button>
           </p>
         </div>
